@@ -23,7 +23,7 @@ function Phonenavbar() {
   const root = usePathname()
   console.log(root)
   return (
-    <section className="fixed z-30 top-2  sm:hidden w-full flex justify-center ">
+    <section className=" sm:hidden w-full flex justify-center ">
           <ul className="holder bg-primary flex justfiy-center py-2  rounded-xl px-2 gap-2">
         { links.map((item ,index) => (
           <Link href={item.href} key={index}>
@@ -46,7 +46,7 @@ function Phonenavbar() {
     const year = new Date().getFullYear();
 
     return (
-      <section className=" fixed z-30  bottom-2 sm:hidden w-full flex  flex-col items-center ">
+      <section className="  sm:hidden w-full flex  flex-col items-center ">
         <ul className="holder flex flex-row justify-center gap-8">
           { links.map((item ,index) => (
             <Link href={item.href} key={index}>
