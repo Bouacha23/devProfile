@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,7 +18,10 @@
 }
 
 body {
+  
+  overflow: hidden;
   color: rgb(var(--foreground-rgb));
+  font-size: 14px;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +34,93 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.layer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  
+  
+  .circle {
+    animation: moveCircle 30s infinite ease-in-out; 
+  }
+  .circletwo {
+    animation: moveCircleTwo 30s infinite ease-in-out; 
+  }
+  
+  @keyframes moveCircle {
+    0% {
+      transform: translate(0, 0);
+    }
+    30% {
+      transform: translate(300px, 200px); 
+    }
+
+    50% {
+        transform: translate(200px, 100px); 
+      }
+    70% {
+        transform: translate(20vw, 90vh); 
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes moveCircleTwo {
+   
+    0% {
+      transform: translate(300px, 200px); 
+    }
+
+    50% {
+        transform: translate(400px, 500px); 
+      }
+    70% {
+        transform: translate(60vw, 60vh); 
+    }
+    100% {
+      transform: translate(300px, 0);
+    }
+  }
+
+  .container {
+    @apply  m-auto h-full  md:w-full  w-[80%]
+  }
+
+
+.glass{
+  background: linear-gradient(135deg, rgba(19, 19, 19, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+  
+.round {
+  @apply  rounded-xl border border-bor
+}
+.pt {
+  @apply pt-[70px] md:pt-4  md:px-4 
+}
+
+.p {
+  @apply p-2
+
+}
+.back {
+  @apply bg-primary round p 
+}
+.fl {
+  @apply flex items-center justify-center gap-2
+}
+
+.gradient-text {
+  background: linear-gradient(to bottom, #ffffff, #3a3a3a);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text; /* For non-webkit browsers */
 }
