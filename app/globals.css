@@ -89,7 +89,7 @@ body {
   }
 
   .container {
-    @apply  m-auto h-full  md:w-full  w-[80%]
+    @apply  m-auto h-full  md:w-full  w-[65%]
   }
 
 
@@ -113,6 +113,12 @@ body {
 }
 .back {
   @apply bg-primary round p 
+}
+.backl {
+  @apply bg-primary round p-4 
+}
+.backs {
+  @apply bg-secend round p-[15px]
 }
 .fl {
   @apply flex items-center justify-center gap-2

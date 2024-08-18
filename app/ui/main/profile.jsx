@@ -16,7 +16,7 @@ function Profile () {
     <div className='grid grid-cols-4 p-4 bg-primary round h-fit gap-x-2 gap-y-4 '>
        <Image  className='bg-white round col-span-2 sm:col-span-1 w-[120px] h-[120px] cover  '  src= "/prof.png" width={50} height={50 } alt='prifleimg' />
       
-       <div className="textone col-span-2 grid gap-2 p  ">
+       <div className="textone col-span-2 grid gap-2 p tranform -translate-x-[60px] sm:translate-x-0">
           <div className="bg-secend  w-fit px-4 py-[4px] rounded-full flex gap-4   items-center ">
             <div  className=' relative flex items-center '>
             <p className='w-[10px] h-[10px] bg-green-400 rounded-full absolute'></p>
