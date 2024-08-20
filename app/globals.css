@@ -123,10 +123,47 @@ body {
 .fl {
   @apply flex items-center justify-center gap-2
 }
+.btn {
+  @apply p-2 px-6 bg-third  border border-secend rounded-xl  border-4
+}
 
 .gradient-text {
   background: linear-gradient(to bottom, #ffffff, #3a3a3a);
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text; /* For non-webkit browsers */
+}
+
+.slider {
+  
+  animation : sliders 20s  ease-in-out infinite ;
+}
+
+.slidery {
+  
+  animation : slidery 30s  ease-in-out infinite ;
+}
+
+
+@keyframes sliders {
+ 
+  50% {
+    transform : translateX(-100%)
+  }
+  100%{
+    transform : translateX(0%)
+  }
+
+  
+}
+@keyframes slidery {
+ 
+  50% {
+    transform : translateY(-65%)
+  }
+  100%{
+    transform : translateY(0%)
+  }
+
+  
 }

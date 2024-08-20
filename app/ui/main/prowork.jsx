@@ -22,18 +22,18 @@ const handleRedirect = (link) => {
   };
 
   return (
-    <div className="backl p flex flex-col items-center gap-4 ">
+    <div className="backl p flex flex-col items-center gap-2 lg:col-span-4 lg:row-span-2 lg:col-start-1 lg:row-start-1 ">
       <div className=" bg-secend  rounded-full w-fit p-2 border border-[1px] border-gray-700 ">
-        <FaSquareUpwork className=" text-third"  size={35}/> 
+        <FaSquareUpwork className=" text-third"  size={25}/> 
       </div>
       <div className="text text-center">
-        <h3 className="text-lg  capitalize ">let's work together</h3>
-        <p className="text-write  lowercase ">let's make magic happen together !</p>
+        <h3 className="text-md  capitalize ">let's work together</h3>
+        <p className="text-write text-sm   lowercase ">let's make magic happen together !</p>
       </div>
-      <div className="btn w-full ">
+      <div className=" w-full ">
         {
             works.map((item ,index)=> (
-                <button onClick={()=> handleRedirect(item.link)} className=" mt-[5px] w-full flex items-center justify-center  gap-2  backs   " key={index } >
+                <button onClick={()=> handleRedirect(item.link)} className=" mt-[px] w-full flex items-center justify-center  gap-2 round  bg-secend p-[10px]   " key={index } >
                     {item.icon}
                     {item.name}
                 </button>

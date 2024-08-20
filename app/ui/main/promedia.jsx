@@ -6,11 +6,11 @@ import { FaGithubSquare ,FaTwitterSquare ,FaLinkedin } from "react-icons/fa";
 
 
 const media = [{
-      name : "Github " , link :"https://mail.google.com/mail?compose=new",icon : <FaGithubSquare className="text-write" size={30} /> 
+      name : "Github " , link :"https://mail.google.com/mail?compose=new",icon : <FaGithubSquare className="text-write" size={20} /> 
 },{
-     name : "Twitter " , link : "https://cal.com/", icon : < FaTwitterSquare className="text-write" size={30} />
+     name : "Twitter " , link : "https://cal.com/", icon : < FaTwitterSquare className="text-write" size={20} />
 },
-   { name : "Linkedin  " ,  link : "#" , icon : <FaLinkedin className="text-write" size={30} /> }
+   { name : "Linkedin  " ,  link : "#" , icon : <FaLinkedin className="text-write" size={20} /> }
 ]
 
 function Promedia() {
@@ -23,7 +23,7 @@ const handleRedirect = (link) => {
 
 
   return (
-    <div className="backl ">
+    <div className="backl lg:col-span-3 lg:row-span-2 slg:col-start-10  ">
         <div className="text flex flex-col items-center  ">
             <h3 className=" fl ">
                 <IoGitNetwork className="text-third" size={20} /> 
@@ -35,7 +35,7 @@ const handleRedirect = (link) => {
             {
             media.map((item , index ) => (
                 <li className="backs  flex  justify-between items-center mb-2 cursor-pointer " onClick={()=> handleRedirect} key={index}>
-                    <div className="flex  gap-4  items-center text-lg text-write ">
+                    <div className="flex  gap-4  items-center text-md text-write ">
                         { item.icon}
                         {item.name}
                     </div>
