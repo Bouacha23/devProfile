@@ -12,10 +12,6 @@ const links = [{
   name : "Works" ,
   href : "/Works",
   icon : <HiTemplate size={15}/>
-}, {
-  name : "Serivies" ,
-  href : "/Serivces",
-  icon : <MdOutlineHomeRepairService size={15}/>
 }]
 
 
@@ -23,11 +19,11 @@ function Phonenavbar() {
   const root = usePathname()
   console.log(root)
   return (
-    <section className="w-[60%] m-auto sm:hidden  flex justify-center ">
-          <ul className="holder bg-primary flex justfiy-center py-2  rounded-xl px-2 gap-2">
+    <section className="flex  justify-center items-center  ">
+          <ul className="holder  bg-primary py-2  rounded-xl px-2 gap-2 flex  ">
         { links.map((item ,index) => (
           <Link href={item.href} key={index}>
-            <li  className={root == item.href ?  " p-[10px] px-4 text-white rounded-lg bg-third hover:text-black flex gap-2 items-center" :" flex gap-2 bg-secend items-center p-[10px] px-8 text-white rounded-lg hover:bg-third hover:text-black"} >
+            <li  className={root == item.href ?  " w-[150px] p-[10px] px-4 text-white rounded-lg bg-third hover:text-black flex gap-2 items-center  justify-center " :"w-[150px]  justify-center  flex gap-2 bg-secend items-center p-[10px] px-8 text-white rounded-lg hover:bg-third hover:text-black"} >
               {item.icon}
               {item.name}
             </li>

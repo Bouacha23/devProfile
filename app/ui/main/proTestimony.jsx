@@ -6,11 +6,11 @@ function ProTestimony() {
     {img:"/pro.jpg" , name : "emily chen " , place : "algeria ,annaba" , data : "10,november,2024" , descrption :"Pragadesh exceeded my expectations with his attention to detail and creativity. I'm thrilled with the website he built for my business."},
     {img:"/pro.jpg" , name : "emily chen " , place : "algeria ,annaba" , data : "10,november,2024" , descrption :"Pragadesh exceeded my expectations with his attention to detail and creativity. I'm thrilled with the website he built for my business."},]
   return (
-    <div className="bg-primary round  py-4 lg:col-start-5 lg:row-start-1 lg:col-span-4 lg:row-span-2 overflow-hidden">
+    <div className="bg-primary round  py-4 min-h-[250px] overflow-hidden ">
         <Comtitle icon={ <MdReviews   className="text-third" size={20 }/> } firstLabel= "Testimonilas" SecendLabel="Rave Reviews Showcase" /> 
         <div className="contain mt-2 p-4  relative  border-t-2 border-secend  overflow-hidden h-[300px]  ">
-          <div className=" absolute top-0 shadow w-full h-[20px] bg-black/15  ">
-          </div >
+          
+           <div className=" slidery">
            { testimony.map( (items , index) => (
             <article key={index}  className={index%2 ? "w-[90%] h-fit round bg-secend p-4  mb-2  " : "w-[90%] h-fit round bg-secend p-2  mb-2 ml-8  "  } > 
               <div className="top flex justify-between items-center">
@@ -29,8 +29,8 @@ function ProTestimony() {
               </div>
             </article>
            ))}
-          <div className=" absolute bottom-0 shadow w-full h-[20px] bg-black/5  ">
-          </div>
+           </div>
+         
         </div>
     </div>
   )

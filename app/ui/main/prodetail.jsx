@@ -9,7 +9,7 @@ function Detailprof() {
         {number :  1 , name : "year expetise" , icons : <FaStar size={15} className="text-third"/> , } 
     ]
   return (
-    <div className="  grid gap-2 grid-cols-2 sm:grid-cols-1 lg:grid-cols-4  lg:row-start-6 lg:col-start-4  lg:col-span-5  ">
+    <div className="  grid gap-2 grid-cols-2 sm:grid-cols-1   ">
         {
            arr.map((item ,index) => (
 

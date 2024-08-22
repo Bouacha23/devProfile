@@ -23,8 +23,8 @@ const handleRedirect = (link) => {
 
 
   return (
-    <div className="backl lg:col-span-3 lg:row-span-2 slg:col-start-10  ">
-        <div className="text flex flex-col items-center  ">
+    <div className="backl  ">
+        <div className="text flex flex-col  items-center  ">
             <h3 className=" fl ">
                 <IoGitNetwork className="text-third" size={20} /> 
                 <p className=" capitalize text-write "> follow me  </p>
@@ -34,7 +34,7 @@ const handleRedirect = (link) => {
         <ul className="p">
             {
             media.map((item , index ) => (
-                <li className="backs  flex  justify-between items-center mb-2 cursor-pointer " onClick={()=> handleRedirect} key={index}>
+                <li className=" round bg-secend py-[10px]  px-4  flex  justify-between items-center mb-2 cursor-pointer " onClick={()=> handleRedirect} key={index}>
                     <div className="flex  gap-4  items-center text-md text-write ">
                         { item.icon}
                         {item.name}

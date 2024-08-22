@@ -1,44 +1,42 @@
 
+
 import { MdWindow } from "react-icons/md";
 import Link from "next/link";
-import { FaCode, FaFileAlt, FaBlog, FaMobileAlt, FaPaintBrush, FaUserTie, FaBriefcase, FaBug } from 'react-icons/fa';
-import { SiJavascript, SiReact } from 'react-icons/si';
+import { FaLightbulb, FaHandsHelping, FaLanguage, FaSmile, FaBrain, FaCogs } from 'react-icons/fa';
+import { GiSkills } from 'react-icons/gi';
 
 const bottom = [
-    { name: "Web Development", icon: <FaCode /> },
-    { name: "Landing Page", icon: <FaFileAlt /> },
-    { name: "Blog Page", icon: <FaBlog  />},
-    { name: "Responsive Design", icon: <FaMobileAlt /> },
-    { name: "UI/UX Design", icon: <FaPaintBrush /> },
-    { name: "Landing Page", icon: <FaFileAlt /> },
-    { name: "Blog Page", icon: <FaBlog  />},
-    { name: "Responsive Design", icon: <FaMobileAlt /> },
+    { name: "Continuous Learning", icon: <FaBrain /> },
+    { name: "Focus & Concentration", icon: <FaCogs /> },
+    { name: "Team Player", icon: <FaHandsHelping /> },
+    { name: "Creativity", icon: <FaLightbulb /> },
+    { name: "Language Proficiency", icon: <FaLanguage /> },
+    { name: "Positive Attitude", icon: <FaSmile /> },
+    { name: "Problem Solving", icon: <GiSkills /> },
+    { name: "Adaptability", icon: <FaCogs /> },
 ];
 
 const top = [
-    { name: "Freelancer", icon: <FaUserTie /> },
-    { name: "Employer", icon: <FaBriefcase /> },
-    { name: "Debugger", icon: <FaBug /> },
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "React", icon: <SiReact /> },
-    { name: "Freelancer", icon: <FaUserTie /> },
-    { name: "Employer", icon: <FaBriefcase /> },
-    { name: "Debugger", icon: <FaBug /> },
+    { name: "Continuous Learning", icon: <FaBrain /> },
+    { name: "Focus & Concentration", icon: <FaCogs /> },
+    { name: "Team Player", icon: <FaHandsHelping /> },
+    { name: "Creativity", icon: <FaLightbulb /> },
+    { name: "Language Proficiency", icon: <FaLanguage /> },
+    { name: "Positive Attitude", icon: <FaSmile /> },
+    { name: "Problem Solving", icon: <GiSkills /> },
+    { name: "Adaptability", icon: <FaCogs /> },
 ];
-
-
-
-function Proserives() {
+function Workme() {
  
   
     return (
-      <div className=" round  bg-primary  relative  min-h-[250px]  overflow-hidden   ">
+      <div className=" round  bg-primary  pt-4 relative  min-h-[250px]  overflow-hidden   ">
            <div className="text flex flex-col items-center  ">
               <h3 className=" fl ">
                   <MdWindow className="text-third" size={20} /> 
-                  <p className=" capitalize text-write "> Services </p>
+                  <p className=" capitalize text-write "> why me  </p>
               </h3>
-              <p className=" capitalize font-bold "> Solutions Suite   </p>
+              <p className=" capitalize font-bold "> why to choose me   </p>
           </div>
 
           <div className="py-4 absolute  top-[30%] overflow-hidden " >
@@ -72,4 +70,5 @@ function Proserives() {
     )
 }
 
-export default Proserives
+
+export default Workme

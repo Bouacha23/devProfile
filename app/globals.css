@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +17,8 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+
 
 body {
   
@@ -89,7 +92,7 @@ body {
   }
 
   .container {
-    @apply  m-auto h-full  md:w-full  w-[65%]
+    @apply  m-auto h-full w-[90%] md:w-full 
   }
 
 
@@ -101,7 +104,7 @@ body {
 }
   
 .round {
-  @apply  rounded-xl border border-bor
+  @apply  rounded-2xl  border border-bor
 }
 .pt {
   @apply pt-[30px] md:pt-4  md:px-4 
@@ -145,6 +148,35 @@ body {
 }
 
 
+.slidetop {
+   animation: top  100s ease infinite ; 
+}
+.slidebottom {
+  animation: bottom   100s ease infinite ; 
+}
+
+.project:hover .btt {
+  @apply  -translate-x-5 translate-y-6 transition-all  duration-1000
+}
+.project:hover .cbtt {
+  @apply  bg-secend
+}
+
+@keyframes top {
+
+100% {
+  transform : translateX(-70%)
+}
+
+}
+@keyframes bottom {
+
+  100% {
+    transform : translateX(30%)
+  }
+  
+  }
+
 @keyframes sliders {
  
   50% {
@@ -153,8 +185,6 @@ body {
   100%{
     transform : translateX(0%)
   }
-
-  
 }
 @keyframes slidery {
  
@@ -166,4 +196,12 @@ body {
   }
 
   
+}
+
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 10px;
+  }
+
+ 
 }
