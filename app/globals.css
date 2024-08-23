@@ -205,3 +205,6 @@ body {
 
  
 }
+.about {
+  background: linear-gradient(to bottom, #202020, #0d0d0d);
+}

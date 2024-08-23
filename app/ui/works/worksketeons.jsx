@@ -5,7 +5,8 @@ import WorkDetails from "./workdetail"
 import Workskill from "./workskill"
 import  Workme from "./workme"
 import Workabout from "./workabout"
-
+import Workdev from "./workdev"
+import Workavalible from "./workavalible"
 function Worksketeons() {
   return (
     <section className=" p-4    ">
@@ -16,6 +17,8 @@ function Worksketeons() {
      <Workskill/>
      <Workme/>
      <Workabout /> 
+     <Workdev /> 
+     <Workavalible /> 
     </div>
    </section >
   )
