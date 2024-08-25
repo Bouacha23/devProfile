@@ -9,8 +9,7 @@ import Workdev from "./workdev"
 import Workavalible from "./workavalible"
 
 
-function Worksketeons() {
-  const windowHeight = window.innerHeight;
+function Worksketeons({WindowHeight }) {
 
   
   return (

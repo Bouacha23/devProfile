@@ -10,8 +10,8 @@ import ProTestimony from "./proTestimony"
 import Proprocess from "./proprocess"
 
 
-function Skelton() {
-  const windowHeight = window.innerHeight;
+function Skelton({WindowHeight }) {
+
 
   return (
     <section className=" p-4   overflow-x-hidden ">
