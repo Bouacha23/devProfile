@@ -30,7 +30,7 @@ function Workme() {
  
   
     return (
-      <div className=" round  bg-primary  pt-4 relative  min-h-[250px]  overflow-hidden   ">
+      <div className=" round  bg-primary  pt-4 relative  min-h-[200px] lg:h-full   overflow-hidden md:col-span-2 lg:col-start-1 lg:row-start-3 lg:row-span-2 lg:col-span-3  ">
            <div className="text flex flex-col items-center  ">
               <h3 className=" fl ">
                   <MdWindow className="text-third" size={20} /> 
@@ -50,7 +50,7 @@ function Workme() {
                 ))}
             </ul>
 
-            <ul className=" transform -translate-x-[300px] slidebottom right flex items-center gap-4">
+            <ul className=" transform -translate-x-[300px] slidebottom right flex items-center gap-4 ">
                 {bottom.map( (item , index) => (
                     <li className=" flex items-center text-md  gap-2 p-2 bg-secend rounded-lg   whitespace-nowrap ">
                         <span className="bg-write text-secend p-2 rounded-md ">{item.icon}</span>
@@ -60,9 +60,9 @@ function Workme() {
             </ul>
             
           </div>
-          <button className=" absolute z-10  top-[70%] left-[50%] top-[65%] -translate-x-[50%] btn capitalize  w-fit font-bold ">
-        <Link href="/Works"  >
-            view  services 
+          <button className=" absolute z-10 lg:h-[50px] top-[70%] left-[50%] top-[65%] -translate-x-[50%] btn capitalize  font-bold ">
+        <Link href="/Works" className=" animate-ping text-xl lg:text-[15px]"  >
+            hire me  !
         </Link>
         </button>
           

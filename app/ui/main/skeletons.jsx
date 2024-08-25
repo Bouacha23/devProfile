@@ -8,19 +8,23 @@ import Proprjects from "./proprjects"
 import Proserives from "./proserives"
 import ProTestimony from "./proTestimony" 
 import Proprocess from "./proprocess"
+
+const windowHeight = window.innerHeight;
+console.log(windowHeight);
+
 function Skelton() {
   return (
-    <section className=" p-4  h-[100vh] overflow-x-hidden ">
-        <div className=" container  gap-2 grid  grid-cols-1       ">
+    <section className=" p-4   overflow-x-hidden ">
+        <div className={` container  gap-2 grid  grid-cols-1 lg:h-[${ windowHeight} ] md:grid-cols-5     `}>
           <Phonenavbar />
           <Profile/>
           <Detailprof/>
           <Proprjects/>
           <Proserives /> 
           <ProTestimony /> 
-          <Proprocess /> 
           <Promedia /> 
           <Prowork /> 
+          <Proprocess /> 
           <Phonefooter /> 
         </div>
     </section >

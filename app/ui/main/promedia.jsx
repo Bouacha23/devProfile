@@ -23,7 +23,7 @@ const handleRedirect = (link) => {
 
 
   return (
-    <div className="backl  ">
+    <div className="backl md:col-span-2  ">
         <div className="text flex flex-col  items-center  ">
             <h3 className=" fl ">
                 <IoGitNetwork className="text-third" size={20} /> 

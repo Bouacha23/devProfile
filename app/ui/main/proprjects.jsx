@@ -5,7 +5,7 @@ import Image from "next/image";
 function Proprjects() {
     const projects = ["/works.png" , "/works.png" , "/works.png" ,"/works.png" , "/works.png"]
   return (
-    <div className="backl relative overflow-hidden   min-h-[250px] ">
+    <div className="backl relative overflow-hidden   min-h-[250px] md:col-span-2 ">
          <div className="text flex flex-col items-center  ">
             <h3 className=" fl ">
                 <PiHandbagSimpleFill className="text-third" size={20} /> 

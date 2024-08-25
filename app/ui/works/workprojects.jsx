@@ -14,13 +14,13 @@ function Workprojects() {
 
 
   return (
-    <div className=" back  ">
+    <div className=" back md:col-span-3 grid lg:col-start-4 lg:row-start-1  lg:col-span-6 lg:row-span-4">
       <Comtitle icon={<MdWork className="text-third " size={20} /> } firstLabel="My Works" SecendLabel= "MY top Projects" />
-      <div className="cont mt-2 grid gap-2  ">
+      <div className="cont mt-2 grid gap-2  md:grid-cols-3 ">
         {projects.map((item , index) => (
             <div className="bg-secend hover:bg-primary  p-4 round project " >
               <Link href={item.href}  target="_blank" rel="noopener noreferrer" >
-                    <img src={item.img}  className=" m-auto w-full  bg-write h-[150px] rounded-lg"/>
+                    <img src={item.img}  className=" m-auto w-full  bg-write h-[150px] lg:h-[100px] rounded-lg"/>
                     <div className="text pt-2 flex items-center justify-between">
                         <div className="left font-bold  text-write  capitalize flex flex-col ">
                             {item.title}

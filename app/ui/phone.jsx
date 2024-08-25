@@ -19,7 +19,7 @@ function Phonenavbar() {
   const root = usePathname()
   console.log(root)
   return (
-    <section className="flex  justify-center items-center  ">
+    <section className="flex  justify-center items-center md:hidden ">
           <ul className="holder  bg-primary py-2  rounded-xl px-2 gap-2 flex  ">
         { links.map((item ,index) => (
           <Link href={item.href} key={index}>

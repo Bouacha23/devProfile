@@ -22,8 +22,9 @@ const handleRedirect = (link) => {
   };
 
   return (
-    <div className="backl p flex flex-col items-center gap-2   ">
-      <div className=" bg-secend  rounded-full w-fit p-2 border border-[1px] border-gray-700 ">
+    <div className="backl p flex flex-col items-center justify-center gap-2  md:col-span-2  ">
+        <div className=" flex flex-col items-center">
+        <div className=" bg-secend  rounded-full w-fit p-2 border border-[1px] border-gray-700 ">
         <FaSquareUpwork className=" text-third"  size={25}/> 
       </div>
       <div className="text text-center">
@@ -40,6 +41,7 @@ const handleRedirect = (link) => {
             ))
         }
       </div>
+        </div>
     </div>
   )
 }

@@ -64,18 +64,18 @@ const frontendSkills = [
 
 function Workskill() {
   return (
-    <div className="bg-primary  round py-2">
+    <div className="bg-primary md:col-span-3  round py-2 lg:row-span-6 lg:row-start-1 lg:col-span-3 lg:col-start-10  ">
       <Comtitle icon={<SiHyperskill  size={30} className="text-third" />} firstLabel="My Skills" SecendLabel="MY hardcore skills" /> 
-      <div className="cont mt-4 border-t-[1px] border-gray-700">
-        <ul className="p-4">
+      <div className="cont mt-4 border-t-[1px] border-gray-700 ">
+        <ul className="p-4 grid md:grid-cols-2 lg:grid-cols-1  gap-x-2">
             {
                 frontendSkills.map((item , index)=> (
-                    <li className="rounded-xl mb-2 bg-secend px-4 py-[10px] flex items-center justify-between">
+                    <li className="rounded-xl mb-2 bg-secend px-4 py-[10px] flex items-center justify-between lg:py-[3px] lg:mt-[1px]">
                         <div className="left flex items-center  gap-2 text-[13px]">
                             <span className="bg-primary p-2 rounded-xl ">{item.icon}</span>
                             {item.skill}
                         </div>
-                        <div className=" text-[12px] rounded-lg bg-primary  text-write px-4 py-2">
+                        <div className=" lg:hidden text-[12px] rounded-lg bg-primary  text-write px-4 py-2">
                              {item.subtitle}
                         </div>
                     </li>

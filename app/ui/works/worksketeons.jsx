@@ -7,18 +7,24 @@ import  Workme from "./workme"
 import Workabout from "./workabout"
 import Workdev from "./workdev"
 import Workavalible from "./workavalible"
+
+const windowHeight = window.innerHeight;
+console.log(windowHeight);
+
+
 function Worksketeons() {
+
   return (
-    <section className=" p-4    ">
-    <div className=" container grid  h-[100vh] overflow-x-hidden gap-4  ">
+    <section className=" p-2   ">
+    <div className={`container grid  w-full  lg:h-[${windowHeight}] overflow-x-hidden gap-4 md:grid-cols-3 lg:grid-cols-12 lg:grid-rows-6 `}>
      <Phonenavbar /> 
      <Workprojects />
      <WorkDetails />
-     <Workskill/>
-     <Workme/>
-     <Workabout /> 
      <Workdev /> 
+     <Workabout /> 
+     <Workskill/>
      <Workavalible /> 
+     <Workme/>
     </div>
    </section >
   )

@@ -92,7 +92,7 @@ body {
   }
 
   .container {
-    @apply  m-auto h-full w-[90%] md:w-full 
+    @apply  m-auto h-full w-[60%] md:w-[100%]  
   }
 
 
