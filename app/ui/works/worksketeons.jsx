@@ -8,12 +8,11 @@ import Workabout from "./workabout"
 import Workdev from "./workdev"
 import Workavalible from "./workavalible"
 
-const windowHeight = window.innerHeight;
-console.log(windowHeight);
-
 
 function Worksketeons() {
+  const windowHeight = window.innerHeight;
 
+  
   return (
     <section className=" p-2   ">
     <div className={`container grid  w-full  lg:h-[${windowHeight}] overflow-x-hidden gap-4 md:grid-cols-3 lg:grid-cols-12 lg:grid-rows-6 `}>

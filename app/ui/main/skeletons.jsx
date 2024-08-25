@@ -9,10 +9,10 @@ import Proserives from "./proserives"
 import ProTestimony from "./proTestimony" 
 import Proprocess from "./proprocess"
 
-const windowHeight = window.innerHeight;
-console.log(windowHeight);
 
 function Skelton() {
+  const windowHeight = window.innerHeight;
+
   return (
     <section className=" p-4   overflow-x-hidden ">
         <div className={` container  gap-2 grid  grid-cols-1 lg:h-[${ windowHeight} ] md:grid-cols-5     `}>

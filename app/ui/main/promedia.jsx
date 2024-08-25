@@ -23,8 +23,9 @@ const handleRedirect = (link) => {
 
 
   return (
-    <div className="backl md:col-span-2  ">
-        <div className="text flex flex-col  items-center  ">
+    <div className="backl md:col-span-2 flex flex-col items-center justify-center  ">
+      <div className=" w-full">
+      <div className="text flex flex-col  items-center  ">
             <h3 className=" fl ">
                 <IoGitNetwork className="text-third" size={20} /> 
                 <p className=" capitalize text-write "> follow me  </p>
@@ -43,6 +44,7 @@ const handleRedirect = (link) => {
                 </li>
             ))}
         </ul>
+      </div>
     </div>
   )
 }
