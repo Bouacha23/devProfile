@@ -9,12 +9,11 @@ import Workdev from "./workdev"
 import Workavalible from "./workavalible"
 
 
-function Worksketeons({WindowHeight }) {
 
-  
+function Worksketeons() {
   return (
     <section className=" p-2   ">
-    <div className={`container grid  w-full  lg:h-[${windowHeight}] overflow-x-hidden gap-4 md:grid-cols-3 lg:grid-cols-12 lg:grid-rows-6 `}>
+    <div className={`container grid  w-full  lg:h-[680px] overflow-x-hidden gap-4 md:grid-cols-3 lg:grid-cols-12 lg:grid-rows-6 `}>
      <Phonenavbar /> 
      <Workprojects />
      <WorkDetails />

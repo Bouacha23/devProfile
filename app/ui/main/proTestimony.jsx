@@ -6,7 +6,7 @@ function ProTestimony() {
     {img:"/pro.jpg" , name : "emily chen " , place : "algeria ,annaba" , data : "10,november,2024" , descrption :"Pragadesh exceeded my expectations with his attention to detail and creativity. I'm thrilled with the website he built for my business."},
     {img:"/pro.jpg" , name : "emily chen " , place : "algeria ,annaba" , data : "10,november,2024" , descrption :"Pragadesh exceeded my expectations with his attention to detail and creativity. I'm thrilled with the website he built for my business."},]
   return (
-    <div className="bg-primary round  py-4 min-h-[200px] overflow-hidden md:col-span-3 ">
+    <div className="bg-primary round  py-4 min-h-[220px] overflow-hidden md:col-span-3 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:col-span-3 ">
         <Comtitle icon={ <MdReviews   className="text-third" size={20 }/> } firstLabel= "Testimonilas" SecendLabel="Rave Reviews Showcase" /> 
         <div className="contain mt-2 p-4  relative  border-t-2 border-secend  overflow-hidden h-[300px]  ">
           

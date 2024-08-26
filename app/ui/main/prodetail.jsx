@@ -9,13 +9,13 @@ function Detailprof() {
         {number :  1 , name : "expetise" , icons : <FaStar size={15} className="text-third"/> , } 
     ]
   return (
-    <div className="  grid gap-2 grid-cols-2  md:col-span-2  ">
+    <div className="  grid gap-2 grid-cols-2  md:col-span-2 lg:row-start-1 lg:col-span-5 lg:col-start-4 lg:grid-cols-4   ">
          {
            arr.map((item ,index) => (
 
       <div className="back  " key={index}>
 
-        <div className="font-bold  mb-4 lg:mb-0  text-7xl lg:text-6xl text-center relative gradient-text flex items-center justify-center ">
+        <div className="font-bold  mb-4 lg:mb-0  text-7xl lg:text-5xl text-center relative gradient-text flex items-center justify-center ">
         {`${item.number} `}
          <FaPlus size={30} className="text-third   "/> 
         </div>

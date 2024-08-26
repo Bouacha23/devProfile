@@ -10,12 +10,11 @@ import ProTestimony from "./proTestimony"
 import Proprocess from "./proprocess"
 
 
-function Skelton({WindowHeight }) {
 
-
+function Skelton() {
   return (
-    <section className=" p-4   overflow-x-hidden ">
-        <div className={` container  gap-2 grid  grid-cols-1 lg:h-[${ windowHeight} ] md:grid-cols-5     `}>
+    <section className=" p-4    ">
+        <div className={` container  gap-2 grid  w-full lg:h-[680px] md:grid-cols-5 lg:grid-cols-12 lg:grid-rows-6  overflow-hidden   `}>
           <Phonenavbar />
           <Profile/>
           <Detailprof/>

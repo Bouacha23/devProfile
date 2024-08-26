@@ -23,7 +23,7 @@ const handleRedirect = (link) => {
 
 
   return (
-    <div className="backl md:col-span-2 flex flex-col items-center justify-center  ">
+    <div className="backl md:col-span-2 flex flex-col items-center justify-center lg:col-span-3  lg:col-start-1 lg:row-start-3 lg:row-span-2  ">
       <div className=" w-full">
       <div className="text flex flex-col  items-center  ">
             <h3 className=" fl ">

@@ -32,7 +32,7 @@ function Proserives() {
  
   
     return (
-      <div className=" round  bg-primary  relative  min-h-[250px]  overflow-hidden  md:col-span-3 ">
+      <div className=" round  bg-primary  relative  min-h-[220px]  overflow-hidden  md:col-span-3 lg:col-span-4 lg:col-start-9 lg:row-span-2 lg:row-start-5 ">
            <div className="text flex flex-col items-center  ">
               <h3 className=" fl ">
                   <MdWindow className="text-third" size={20} /> 

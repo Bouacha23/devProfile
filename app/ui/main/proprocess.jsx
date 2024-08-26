@@ -50,7 +50,7 @@ function Proprocess() {
     
     
     return (
-        <div className="bg-primary round py-4 pb-2 md:col-span-3  ">
+        <div className="bg-primary round py-4 pb-2 md:col-span-3 lg:col-start-9 lg:col-span-4 lg:row-start-1  lg:row-span-4  ">
             <Comtitle icon={ <GiProcessor   className="text-third" size={20 }/> } firstLabel= "Work process" SecendLabel="Workflow technique " /> 
             <div className="contain  mt-2 p-4  relative  border-t-2 border-secend  h-fit h-[250px] ">
             {
