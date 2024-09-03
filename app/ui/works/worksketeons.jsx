@@ -12,7 +12,7 @@ import Workavalible from "./workavalible"
 
 function Worksketeons() {
   return (
-    <section className=" p-2   ">
+    <section className=" p-6   ">
     <div className={`container grid  w-full  lg:h-[680px] overflow-x-hidden gap-4 md:grid-cols-3 lg:grid-cols-12 lg:grid-rows-6 `}>
      <Phonenavbar /> 
      <Workprojects />

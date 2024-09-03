@@ -16,20 +16,20 @@ function Workabout() {
       <div className="top mb-2 ">
       <div className="title flex items-center mb-4 gap-4">
         <p className=' rounded-lg p-3  bg-secend'><FaCode size={25} className='text-third' /> </p>
-        <p className='text-2xl  capitalize font-bold'>web development</p>
+        <p className='text-xl  capitalize font-bold'>web development</p>
       </div>
-      <p className='text-write text-md '>Crafting functional websites with clean code and responsive design to meet client objectives and enhance user experiences</p>
+      <p className='text-write text-sm '>Crafting functional websites with clean code and responsive design to meet client objectives and enhance user experiences</p>
       <Link className=' bg-secend  mt-2 rounded-lg py-[10px] flex gap-2 items-center justify-center py-[10px] px-8' href="#" >
         <SiGmail size={15} className='text-third' />
         Email me
       </Link>
       </div>
 
-      <div className="bottom lg:relative lg:hidden xl:block overflow-hidden   flex flex-col  gap-4    ">
+      <div className=" w-full h-full p-4 text-center lg:hidden xl:block  ">
 
-        <div className="title mb-2 w-full flex itmes-center justify-between">
-          <h1 className='text-lg font-bold  capitalize'>completed projects </h1>
-          <p><Link className=' text-write capitalize view more ' href="#"> view more  </Link></p>
+        <div className="title  l flex itmes-center justify-between">
+          <h1 className=' lg:text-md font-bold  capitalize'>completed projects </h1>
+          <p><Link className=' text-write capitalize lg:text-[12px]' href="https://github.com/Bouacha23"> view more  </Link></p>
         </div>
 
         <div className='overflow-hidden lg:hidden'>
@@ -44,9 +44,8 @@ function Workabout() {
             </ul>
         </div>
 
-        <div className=' xl:flex xl:block hidden  '>
-               <span className='text-9xl'>07</span>
-               <span><FaPercentage size={180} className='  absolute'/></span>
+        <div className=' pt-4  xl:block hidden text-9xl font-bold text-third  '>
+               07
         </div>
       </div>
     </div>
