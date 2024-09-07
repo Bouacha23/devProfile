@@ -8,6 +8,16 @@ function Detailprof() {
         {number : 2 , name : "clients" , icons : <IoIosHappy size={15} className="text-third"/> , } ,
         {number :  1 , name : "expetise" , icons : <FaStar size={15} className="text-third"/> , } 
     ]
+    const DownloadButton = () => {
+      const handleDownload = () => {
+        const pdfUrl = '/Resume.pdf'; 
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = '/Resume.pdf';
+        link.click();
+      };
+      handleDownload()
+    }
   return (
     <div className="  grid gap-2 grid-cols-2  md:col-span-2 lg:row-start-1 lg:col-span-5 lg:col-start-4 lg:grid-cols-4   ">
          {
@@ -27,10 +37,10 @@ function Detailprof() {
       </div>
            ))
         }
-        <div className="back fl   ">
+        <div  className="back fl   ">
             Resume 
-            <div className=" p round bg-secend w-[50px] cursor-pointer  hover:bg-white " >
-               <FaArrowCircleDown size={30} className="text-gray-500 "/>
+            <div onClick={() => DownloadButton()} className=" p round bg-secend w-[50px] cursor-pointer  hover:bg-white " >
+               <FaArrowCircleDown  size={30} className="text-gray-500 "/>
             </div>
         </div>
     </div>
