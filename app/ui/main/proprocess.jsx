@@ -60,7 +60,7 @@ function Proprocess() {
                         <span className="p-2 bg-write  rounded-lg text-secend">{ item.icon}</span>
                         {item.name}
                     </div>
-                    <FaCircleChevronLeft className="ml-24 transform -rotate-90   place-self-center  " onClick={(e)=> handelClick(index)} /> 
+                    
                     {item.state ?  <p className=" col-span-2 text-center text-write capitalize text-[13px] " >
                         {item.description}
                     </p> : null }

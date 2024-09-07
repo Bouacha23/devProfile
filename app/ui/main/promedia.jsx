@@ -6,11 +6,11 @@ import { FaGithubSquare ,FaTwitterSquare ,FaLinkedin } from "react-icons/fa";
 
 
 const media = [{
-      name : "Github " , link :"https://mail.google.com/mail?compose=new",icon : <FaGithubSquare className="text-write" size={20} /> 
+      name : "Github " , link :"https://github.com/Bouacha23",icon : <FaGithubSquare className="text-write" size={20} /> 
 },{
-     name : "Twitter " , link : "https://cal.com/", icon : < FaTwitterSquare className="text-write" size={20} />
+     name : "Twitter " , link : "https://github.com/Bouacha23", icon : < FaTwitterSquare className="text-write" size={20} />
 },
-   { name : "Linkedin  " ,  link : "#" , icon : <FaLinkedin className="text-write" size={20} /> }
+   { name : "Linkedin  " ,  link : "https://www.linkedin.com/in/najme-bouacha-b495aa2a8/" , icon : <FaLinkedin className="text-write" size={20} /> }
 ]
 
 function Promedia() {
@@ -35,6 +35,8 @@ const handleRedirect = (link) => {
         <ul className="p">
             {
             media.map((item , index ) => (
+              <a href={item.link} target="_blank" 
+              rel="noopener noreferrer">
                 <li className=" round bg-secend py-[10px]  px-4  flex  justify-between items-center mb-2 cursor-pointer " onClick={()=> handleRedirect} key={index}>
                     <div className="flex  gap-4  items-center text-md text-write ">
                         { item.icon}
@@ -42,6 +44,7 @@ const handleRedirect = (link) => {
                     </div>
                     <BiSolidChevronLeftCircle className="  trnasform rotate-180" size={20} />
                 </li>
+              </a>
             ))}
         </ul>
       </div>

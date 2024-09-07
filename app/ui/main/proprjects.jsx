@@ -3,7 +3,7 @@ import Link from "next/link"
 import { PiHandbagSimpleFill } from "react-icons/pi";
 import Image from "next/image";
 function Proprjects() {
-    const projects = ["/works.png" , "/works.png" , "/works.png" ,"/works.png" , "/works.png"]
+    const projects = ["/Landing.png" , "/Game.png" , "/Crypto.png" ,"/regist.png" , "/shushi.png"]
   return (
     <div className="backl relative overflow-hidden   min-h-[220px] md:col-span-2  lg:col-span-4 lg:row-start-5  ">
          <div className="text flex flex-col items-center  ">

@@ -6,15 +6,18 @@ import { FaArrowLeft } from "react-icons/fa";
 function Workprojects() {
   
     const projects = [
-      {img:"/works.png" , href :"#" ,title:"ecommerce" , subtitle : "electronx" },
-      {img:"/works.png" , href :"#" ,title:"ecommerce" , subtitle : "electronx" },
-      {img:"/works.png" , href :"#" ,title:"ecommerce" , subtitle : "electronx" },
-      {img:"/works.png" , href :"#" ,title:"ecommerce" , subtitle : "electronx" }
+      {img:"/shushi.png" , href :"https://shishi-sigma.vercel.app/" ,title:"SHUSHI" , subtitle : "BOOK TABLE" },
+      {img:"/Landing.png" , href :"#" ,title:"Electronx" , subtitle : "ecommerce" },
+      {img:"/Game.png" , href :"https://gaming-iota-three.vercel.app/" ,title:"Gameing shop" , subtitle : "ecommerce shop" },
+      {img:"/Crypto.png" , href :"https://cryptocoins-reactproject.vercel.app" ,title:"Crypto news" , subtitle : "new Api " },
+      {img:"/Appointy.png" , href :"https://appointy-navy.vercel.app/" ,title:"Appointy" , subtitle : "medical app" },
+      {img:"/regist.png" , href :"https://form-validation-self-nine.vercel.app/" ,title:"Register" , subtitle : "form validation" },
+      {img:"/Landing.png" , href :"https://landeingpage.vercel.app/" ,title:"Landing page" , subtitle : "website" },
     ]
 
 
   return (
-    <div className=" back md:col-span-3 grid lg:col-start-4 lg:row-start-1  lg:col-span-6 lg:row-span-4">
+    <div className=" back md:col-span-3 grid lg:col-start-4 lg:row-start-1  lg:col-span-6 lg:row-span-4 lg:overflow-y-scroll scrollable-component">
       <Comtitle icon={<MdWork className="text-third " size={20} /> } firstLabel="My Works" SecendLabel= "MY top Projects" />
       <div className="cont mt-2 grid gap-2  md:grid-cols-3 ">
         {projects.map((item , index) => (

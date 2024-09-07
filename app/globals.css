@@ -85,7 +85,7 @@ body {
   }
 
   .container {
-    @apply  m-auto w-full   sm:w-[60%]  md:w-[100%]  
+    @apply  m-auto w-full   sm:w-[60%]  md:w-full  
   }
 
 
@@ -200,4 +200,26 @@ body {
 }
 .about {
   background: linear-gradient(to bottom, #202020, #0d0d0d);
+}
+
+
+/* For the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* For the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #040404; /* Color of the track */
+}
+
+/* For the scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Color of the scrollbar */
+  border-radius: 10px; /* Optional: roundness of the scrollbar handle */
+}
+
+/* On hover, the scrollbar handle can change color */
+::-webkit-scrollbar-thumb:hover {
+  background: #414141; /* Darker color when hovering */
 }

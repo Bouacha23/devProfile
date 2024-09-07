@@ -19,7 +19,7 @@ function Workabout() {
         <p className='text-xl  capitalize font-bold'>web development</p>
       </div>
       <p className='text-write text-sm '>Crafting functional websites with clean code and responsive design to meet client objectives and enhance user experiences</p>
-      <Link className=' bg-secend  mt-2 rounded-lg py-[10px] flex gap-2 items-center justify-center py-[10px] px-8' href="#" >
+      <Link className=' bg-secend  mt-2 rounded-lg py-[10px] flex gap-2 items-center justify-center py-[10px] px-8' href="https://mail.google.com/" >
         <SiGmail size={15} className='text-third' />
         Email me
       </Link>
