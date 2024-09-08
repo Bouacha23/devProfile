@@ -9,7 +9,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 function Profile () {
 
   return (
-    <div className='grid h-fit grid-cols-4  p-4  bg-primary round h-fit gap-x-2 gap-y-4 md:col-span-3 lg:col-start-4 lg:col-span-5 lg:row-span-2  '>
+    <div className='grid h-fit grid-cols-4  p-4 xl:p-6 bg-primary round h-fit gap-x-2 gap-y-4 md:col-span-3 lg:col-start-4 lg:col-span-5 lg:row-span-2  '>
        <Image  className='bg-white round col-span-1 sm:col-span-1 w-[120px] h-[120px] cover  '  src= "/prof.png" width={50} height={50 } alt='prifleimg' />
       
        <div className="textone col-span-2 grid gap-2 p  sm:translate-x-0">
