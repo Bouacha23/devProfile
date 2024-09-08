@@ -14,7 +14,7 @@ import Proprocess from "./proprocess"
 function Skelton() {
   return (
     <section className=" w-[100vw] h-[100vh] p-6 flex items-center justify-center   ">
-        <div className={` container  gap-4 grid  w-full lg:h-[680px] grid-cols-1 md:grid-cols-5 lg:grid-cols-12 lg:grid-rows-6  overflow-hidden   `}>
+        <div className={` container  gap-4 xl:gap-2 grid  w-full lg:h-[680px] grid-cols-1 md:grid-cols-5 lg:grid-cols-12 lg:grid-rows-6  overflow-hidden   `}>
           <Phonenavbar />
           <Profile/>
           <Detailprof/>
