@@ -30,17 +30,17 @@ function Detailprof() {
          <FaPlus size={30} className="text-third   "/> 
         </div>
 
-        <div className="fl bg-secend back text-sm ">
+        <div className="fl bg-secend back text-[12px] md:text-[10px] xl:text-sm">
             {item.icons}
             {item.name}
         </div>
       </div>
            ))
         }
-        <div  className="back fl   ">
+        <div  className="back fl text-[10px] xl:text-sm  ">
             Resume 
-            <div onClick={() => DownloadButton()} className=" p round bg-secend w-[50px] cursor-pointer  hover:bg-white " >
-               <FaArrowCircleDown  size={30} className="text-gray-500 "/>
+            <div onClick={() => DownloadButton()} className=" p-2 round bg-secend w-[50px] cursor-pointer  hover:bg-white " >
+               <FaArrowCircleDown  size={20} className="text-gray-500 "/>
             </div>
         </div>
     </div>
